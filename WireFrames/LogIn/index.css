@@ -1,0 +1,257 @@
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1500px;
+    font-size: 4vh;
+    background: #6da5e0;color: navy;
+    
+  }
+  .tablet{
+      display: grid;
+      border-radius: 15px;
+      width: 95%;
+          grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 55%;
+    column-gap: 5px;
+    row-gap: 10px;
+  }
+  a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    color:#6da5e0;
+
+  
+  }
+  a:visited{
+    color:#6da5e0;
+  
+  
+  }
+  a:hover:visited{
+    color: lightblue;
+  
+  }
+  ul, li{
+    display: flex;
+    margin-right: 15px;
+    text-decoration: none; 
+       
+  }
+  #boxes {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 14%;
+    column-gap: 5px;
+    row-gap: 5px;
+  
+  }
+  .boxes {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px purple ;
+    background-color: navy;
+
+  }
+  .menuBox {
+      grid-column-start: 1;
+  }
+  
+  .logoBox {
+        grid-column-start: 2;
+  }
+  .navBox {
+        grid-column-start: 2;
+        grid-column-end: 4;
+  }
+  .cartBox {
+    grid-column-start: 4;
+  }
+  
+  
+  .content {
+    border: solid 1px purple ;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  
+  }
+  .topContent {
+        grid-column: 1/ 3;
+  }
+  
+  .orderButton{
+          border: solid 1px purple ;
+          border-radius: 15px;
+          padding:10px;
+          margin: auto;
+  }
+  
+  .midContent {
+        grid-column: 3/ 5; 
+  }
+  
+  .bottomContent {
+        grid-column: 1/ -1;
+        display: flex;
+        flex-flow: column nowrap;
+         
+  }
+  
+  .socialMedia {
+    grid-column:  1/-1;
+  
+  }
+  
+  .socialButton {
+    margin-left: 100px; 
+  }
+  button{
+    background-color:#0a0a23;
+    color: lightblue;
+    border:none; 
+    border-radius:10px; 
+    padding:10px;
+  }
+  button:hover{
+    background-color: #6e9de3;
+    border: solid 2px navy;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  .quarter{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: solid 1px purple ;
+  
+  }
+  .happyHour{
+    grid-column:  1/2;
+  }
+  
+  footer{
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: navy;
+    color: #6e9de3;
+  }
+  @media(max-width: 600px){
+    body{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      font-size: 3  vh;
+      width: 480px;
+    }
+    .tablet{
+        display: grid;
+        border-radius: 15px;
+        width: 480px;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 50% 30% 20% 20% 20% 20% 20%;
+      column-gap: 5%;
+      row-gap: 2%;
+    }
+    
+    .menuBox {
+        border: solid 1px black;
+        grid-column-start: 1;
+        display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+     
+    }
+    
+    .logoBox {
+          grid-column-start: 2;
+          border: solid 1px black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    .cartBox {
+          grid-column-start: 3;
+          border: solid 1px black;
+          
+  
+          
+    }
+    
+    .navBox {
+          grid-column: 1/ -1;
+          height: 100%;
+          border: solid 1px black;
+          margin-bottom: 10px;
+          display: none;
+          justify-content: center;
+    }
+    
+    .topContent {
+          grid-column: 1/ -1;
+          height: 100%;
+          border: solid 1px black;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          flex-flow: column nowrap;  
+    }
+    
+    .orderButton{
+            border: solid 1px black;
+            margin: auto;
+    }
+    
+    .midContent {
+          grid-column: 1/ -1;
+          height: 100%;
+          border: solid 1px black;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          flex-flow: column nowrap;  
+    }
+    
+    .bottomContent {
+          grid-column: 1/ -1;
+          height: 100%;
+          border: solid 1px black;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          flex-flow: column nowrap;  
+    }
+    .quarter{
+      grid-column: 1/4;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px black;
+  
+      
+    }
+    .socialMedia {
+      grid-column:  1/-1;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      border: solid 1px black;
+    
+    }
+    .socialButtons{
+      display: flex;
+      align-items: center;
+      flex-flow: row nowrap;  
+    }
+    .socialButton {
+      margin-left: 10px; 
+    }
+  }
